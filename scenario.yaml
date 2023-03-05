@@ -25,10 +25,73 @@ goals:
       y: 524
 
 scenarios:
-    - name: "Prosty Scenariusz"
+    - name: "Scenariusz 1"
+      speed: 5
+      awards:
+        obstacle: -4
+        to_target: 0.3
+        from_target: -0.5
+
+    - name: "Scenariusz 2"
       speed: 5
       awards:
         obstacle: -4
         to_target: 0.6
-        from_target: -4
+        from_target: -0.5
 
+    - name: "Scenariusz 3"
+      speed: 5
+      awards:
+        obstacle: -4
+        to_target: 0.9
+        from_target: -0.5
+
+    - name: "Scenariusz 4"
+      speed: 5
+      awards:
+        obstacle: -4
+        to_target: 1
+        from_target: -0.5
+
+    - name: "Scenariusz 5"
+      speed: 5
+      awards:
+        obstacle: -4
+        to_target: 2
+        from_target: -0.5
+
+
+    - name: "Scenariusz 6"
+      speed: 5
+      awards:
+        obstacle: -4
+        to_target: 0.3
+        from_target: -0.3
+
+    - name: "Scenariusz 7"
+      speed: 5
+      awards:
+        obstacle: -4
+        to_target: 0.3
+        from_target: -0.5
+
+    - name: "Scenariusz 8"
+      speed: 5
+      awards:
+        obstacle: -4
+        to_target: 0.3
+        from_target: -1
+
+    - name: "Scenariusz 9"
+      speed: 5
+      awards:
+        obstacle: -4
+        to_target: 0.3
+        from_target: -2
+
+    - name: "Scenariusz 10"
+      speed: 5
+      awards:
+        obstacle: -4
+        to_target: 0.3
+        from_target: -4
