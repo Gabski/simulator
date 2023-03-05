@@ -1,0 +1,101 @@
+#:kivy 1.0.9
+
+<Car>:
+    size: 40, 20
+    canvas:
+        PushMatrix
+        Rotate:
+            origin: self.center
+            angle: self.angle
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'car.png'
+        PopMatrix
+
+<Goal>:
+    size: 15,15
+    canvas:
+        Color:
+            rgba: 0,0,1,1
+        Ellipse:
+            pos: self.pos
+            size: self.size  
+
+<SensorPoint1>:
+    size: 5,5
+    canvas:
+        Color:
+            rgba: self.color
+        Ellipse:
+            pos: self.pos
+            size: self.size  
+
+<SensorPoint2>:
+    size: 5,5
+    canvas:
+        Color:
+            rgba: self.color
+        Ellipse:
+            pos: self.pos
+            size: self.size 
+
+<SensorPoint3>:
+    size: 5,5
+    canvas:
+        Color:
+            rgba: self.color
+        Ellipse:
+            pos: self.pos
+            size: self.size  
+
+
+<SensorPoint4>:
+    size: 5,5
+    canvas:
+        Color:
+            rgba: self.color
+        Ellipse:
+            pos: self.pos
+            size: self.size  
+
+
+<SensorPoint5>:
+    size: 5,5
+    canvas:
+        Color:
+            rgba: self.color
+        Ellipse:
+            pos: self.pos
+            size: self.size  
+
+<SimulationState>:
+    car: car
+    sensorPoint1: sensor_point_1
+    sensorPoint2: sensor_point_2
+    sensorPoint3: sensor_point_3
+    sensorPoint4: sensor_point_4
+    sensorPoint5: sensor_point_5
+    goal: goal
+
+    Car:
+        id: car
+        center: self.parent.center
+    SensorPoint1:
+        id: sensor_point_1
+        center: self.parent.center
+    SensorPoint2:
+        id: sensor_point_2
+        center: self.parent.center
+    SensorPoint3:
+        id: sensor_point_3
+        center: self.parent.center
+    SensorPoint4:
+        id: sensor_point_4
+        center: self.parent.center
+    SensorPoint5:
+        id: sensor_point_5
+        center: self.parent.center
+    Goal:
+        id: goal
+        center: self.parent.center
