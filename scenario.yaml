@@ -1,0 +1,34 @@
+version: '1.0'
+
+rounds: 3
+goals:
+    - neme: "1"
+      x: 128
+      y: 114
+    - neme: "2"
+      x: 131
+      y: 522
+    - neme: "3"
+      x: 310
+      y: 523
+    - neme: "4"
+      x: 712
+      y: 226
+    - neme: "5"
+      x: 711
+      y: 729
+    - neme: "6"
+      x: 612
+      y: 819
+    - neme: "7"
+      x: 909
+      y: 524
+
+scenarios:
+    - name: "Prosty Scenariusz"
+      speed: 5
+      awards:
+        obstacle: -4
+        to_target: 0.6
+        from_target: -4
+
